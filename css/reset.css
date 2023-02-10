@@ -10,7 +10,7 @@
 
 *::selection {
 	background-color: var(--white);
-	color: var(--blue);
+	color: var(--dark-red);
 }
 
 body {

@@ -4,3 +4,10 @@
 	--light-gray: #ced4da;
 	--dark-gray: #353535;
 }
+
+/* Global styles
+========================= */
+
+body {
+	font-family: 'Roboto', sans-serif;
+}

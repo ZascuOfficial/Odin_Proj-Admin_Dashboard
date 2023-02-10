@@ -1,10 +1,10 @@
 :root {
 	--white: #fff;
-	--light-gray: #f4f4f4;
-	--dark-gray: #353535;
-	--light-red: #f07167;
-	--mid-red: #ff5a5f;
-	--dark-red: #902923;
+	--light-gray: #e8e4db;
+	--dark-gray: #2e2c2f;
+	--reseda-green: #5f684b;
+	--moss-green: #9BA17F;
+	--olivine: #c2d68b;
 }
 
 /* Global
@@ -22,8 +22,9 @@ body {
 	font-weight: 500;
 }
 
-.logo h3 {
+.sidebar-logo h3 {
 	font-size: 1.7rem;
+	text-transform: uppercase;
 }
 
 .sidebar li {
@@ -32,10 +33,6 @@ body {
 
 .sidebar a {
 	text-decoration: none;
-}
-
-.sidebar a:hover {
-	text-decoration: underline;
 }
 
 /* Layout
@@ -48,3 +45,41 @@ body {
 
 /* Sidebar
 --------------- */
+
+.sidebar {
+	padding: 2em;
+	background-color: var(--reseda-green);
+	color: var(--white);
+}
+
+.sidebar-logo,
+.sidebar ul,
+.sidebar li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sidebar-logo {
+	margin-bottom: 2.5em;
+}
+
+.sidebar-image {
+	width: 3.7em;
+}
+
+.sidebar ul {
+	gap: 1em;
+}
+
+.sidebar li {
+	gap: .35em;
+}
+
+.sidebar a { color: var(--white); }
+.sidebar a:hover { color: var(--olivine); }
+.sidebar a:active { color: var(--moss-green); }
+
+.link-icon {
+	width: 2.5em;
+}

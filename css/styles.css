@@ -1,9 +1,10 @@
 :root {
 	--white: #fff;
-	--light-gray: #ddd;
+	--light-gray: #f4f4f4;
 	--dark-gray: #353535;
-	--blue: #0081a7;
-	--red: #f07167;
+	--light-red: #f07167;
+	--mid-red: #ff5a5f;
+	--dark-red: #902923;
 }
 
 /* Global
@@ -25,6 +26,10 @@ body {
 	font-size: 1.7rem;
 }
 
+.sidebar li {
+	list-style-type: none;
+}
+
 .sidebar a {
 	text-decoration: none;
 }
@@ -43,48 +48,3 @@ body {
 
 /* Sidebar
 --------------- */
-
-.sidebar,
-.logo,
-.sidebar ul,
-.sidebar li {
-	display: flex;
-	flex-direction: column;
-	gap: 1em;
-}
-
-.logo {
-	align-items: center;
-}
-
-.logo-image {
-	width: 3.7em;
-}
-
-.sidebar {
-	padding: 2em;
-	gap: 2.5em;
-	background-color: var(--blue);
-	color: var(--white);
-}
-
-.sidebar li {
-	flex-direction: row;
-	align-items: center;
-}
-
-.sidebar a {
-	color: var(--white);
-}
-
-.sidebar a:hover {
-	color: var(--light-gray);
-}
-
-.sidebar a:active {
-	color: var(--white);
-}
-
-.link-icon {
-	width: 2.5em;
-}

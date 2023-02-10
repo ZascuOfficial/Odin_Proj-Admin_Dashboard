@@ -1,6 +1,6 @@
 :root {
 	--white: #fff;
-	--light-gray: #ced4da;
+	--light-gray: #ddd;
 	--dark-gray: #353535;
 	--blue: #0081a7;
 	--red: #f07167;
@@ -16,13 +16,75 @@ body {
 /* Typography
 ========================= */
 
+.sidebar {
+	font-size: 1.15rem;
+	font-weight: 500;
+}
 
+.logo h3 {
+	font-size: 1.7rem;
+}
+
+.sidebar a {
+	text-decoration: none;
+}
+
+.sidebar a:hover {
+	text-decoration: underline;
+}
 
 /* Layout
 ========================= */
 
 .container-main {
-	min-height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr;
+}
+
+/* Sidebar
+--------------- */
+
+.sidebar,
+.logo,
+.sidebar ul,
+.sidebar li {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.logo {
+	align-items: center;
+}
+
+.logo-image {
+	width: 3.7em;
+}
+
+.sidebar {
+	padding: 2em;
+	gap: 2.5em;
+	background-color: var(--blue);
+	color: var(--white);
+}
+
+.sidebar li {
+	flex-direction: row;
+	align-items: center;
+}
+
+.sidebar a {
+	color: var(--white);
+}
+
+.sidebar a:hover {
+	color: var(--light-gray);
+}
+
+.sidebar a:active {
+	color: var(--white);
+}
+
+.link-icon {
+	width: 2.5em;
 }

@@ -1,8 +1,9 @@
 :root {
-	--blue: #0081a7;
-	--red: #f07167;
+	--white: #fff;
 	--light-gray: #ced4da;
 	--dark-gray: #353535;
+	--blue: #0081a7;
+	--red: #f07167;
 }
 
 /* Global

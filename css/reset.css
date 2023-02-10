@@ -8,6 +8,11 @@
 	font: inherit;
 }
 
+*::selection {
+	background-color: var(--white);
+	color: var(--blue);
+}
+
 body {
 	min-height: 100vh;
 }

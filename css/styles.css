@@ -20,5 +20,8 @@ body {
 /* Layout
 ========================= */
 
-/* Sidebar
---------------- */
+.container-main {
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+}

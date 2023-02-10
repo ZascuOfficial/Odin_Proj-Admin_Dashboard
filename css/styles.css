@@ -43,6 +43,12 @@ body {
 	grid-template-columns: 1fr;
 }
 
+@media (min-width: 950px) {
+	.container-main {
+		grid-template-columns: 17.5em 1fr;
+	}
+}
+
 /* Sidebar
 --------------- */
 
@@ -53,7 +59,6 @@ body {
 }
 
 .sidebar-logo,
-.sidebar ul,
 .sidebar li {
 	display: flex;
 	flex-direction: column;
@@ -69,6 +74,8 @@ body {
 }
 
 .sidebar ul {
+	display: grid;
+	grid-template-columns: 1fr;
 	gap: 1em;
 }
 
@@ -82,4 +89,20 @@ body {
 
 .link-icon {
 	width: 2.5em;
+}
+
+@media (min-width: 675px) {
+	.sidebar ul {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (min-width: 950px) {
+	.sidebar {
+		min-height: 100vh;
+	}
+
+	.sidebar ul {
+		grid-template-columns: 1fr;
+	}
 }

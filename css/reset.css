@@ -9,8 +9,8 @@
 }
 
 *::selection {
-	background-color: var(--white);
-	color: var(--dark-red);
+	background-color: var(--light-gray);
+	color: var(--reseda-green);
 }
 
 body {

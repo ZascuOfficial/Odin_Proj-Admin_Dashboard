@@ -9,9 +9,9 @@ In this project I did my best to implement:
 2. CSS Flex-box
 3. Responsiveness using media queries
 
-## 🖼️ [Live Preview Link](# "Not available")
+## 🖼️ [Live Preview Link](https://zascuofficial-admin-dashboard.netlify.app/ "The live preview of the page")
 
-![Live Preview Image](# "Not available")
+![Live Preview Image](assets/img/page-preview.png "The preview of the page")
 
 ## 💻 Technologies Used
 

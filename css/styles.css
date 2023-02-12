@@ -24,7 +24,7 @@ body {
 	font-weight: 500;
 }
 
-.sidebar-logo h3 {
+.sidebar-logo h1 {
 	font-size: 1.7rem;
 	text-transform: uppercase;
 }
@@ -37,6 +37,25 @@ body {
 	text-decoration: none;
 }
 
+.profile-username {
+	font-size: 1.35rem;
+	font-weight: 500;
+}
+
+.welcome p {
+	font-size: 1.125rem;
+}
+
+.welcome .username {
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.btn {
+	text-decoration: none;
+}
+
 /* Layout
 ========================= */
 
@@ -45,7 +64,7 @@ body {
 	grid-template-columns: 1fr;
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1200px) {
 	.container-main {
 		grid-template-columns: 17.5em 1fr;
 	}
@@ -99,7 +118,7 @@ body {
 	}
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1200px) {
 	.sidebar {
 		min-height: 100vh;
 	}
@@ -110,5 +129,99 @@ body {
 
 	.sidebar li {
 		flex-direction: row;
+		gap: .7em;
+	}
+}
+
+/* Header
+--------------- */
+
+header {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2em;
+	padding: 1.7em;
+	background-color: var(--white);
+	box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+
+.search-icon {
+	width: 1.75em;
+}
+
+.search-box {
+	width: 80%;
+	max-width: 700px;
+	padding: .35em;
+	background-color: var(--light-gray);
+	border: 2px solid var(--reseda-green);
+}
+
+.search-box::selection {
+	background-color: var(--reseda-green);
+	color: var(--white);
+}
+
+.search-box:focus {
+	outline: none;
+}
+
+.profile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.7em;
+}
+
+.profile-icon {
+	width: 3.75em;
+	height: 3.75em;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.welcome {
+	margin-inline: auto;
+}
+
+.welcome .username {
+	color: var(--reseda-green);
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: .7em;
+}
+
+.btn {
+	padding: .75em 1.5em;
+	background-color: var(--reseda-green);
+	color: var(--white);
+	border-radius: 1.25em;
+}
+
+.btn:hover {
+	background-color: var(--olivine);
+	color: var(--reseda-green);
+}
+
+.btn:active {
+	background-color: var(--moss-green);
+	color: var(--olivine);
+	transition: ease-in-out 50ms;
+}
+
+@media (min-width: 1200px) {
+	header {
+		grid-template-columns: 5fr 1fr;
 	}
 }

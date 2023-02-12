@@ -16,6 +16,10 @@ body {
 	color: var(--dark-gray);
 }
 
+section {
+	min-height: 100vh;
+}
+
 /* Typography
 ========================= */
 
@@ -54,6 +58,21 @@ body {
 
 .btn {
 	text-decoration: none;
+}
+
+.main-title {
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.topic-title {
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+
+.topic-body {
+	font-size: .95rem;
+	font-weight: 300;
 }
 
 /* Layout
@@ -223,5 +242,55 @@ header {
 @media (min-width: 1200px) {
 	header {
 		grid-template-columns: 5fr 1fr;
+	}
+}
+
+/* Main Section
+--------------- */
+
+main {
+	padding: 1.7em;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1em;
+}
+
+.main-title {
+	grid-column: 1 / -1;
+}
+
+.main-title::selection {
+	background-color: var(--reseda-green);
+	color: var(--white);
+}
+
+.topic {
+	padding: 1.5em;
+	background-color: var(--white);
+	border-left: 5px solid var(--reseda-green);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.topic-title {
+	margin-bottom: 1em;
+}
+
+.topic-body {
+	margin-bottom: .5em;
+}
+
+.read-more-link { color: var(--reseda-green); }
+.read-more-link:hover { color: var(--moss-green); }
+.read-more-link:active { color: var(--olivine); }
+
+@media (min-width: 675px) {
+	main {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1150px) {
+	main {
+		grid-template-columns: repeat(3, 1fr);
 	}
 }

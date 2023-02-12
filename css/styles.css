@@ -12,6 +12,8 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
+	background-color: var(--light-gray);
+	color: var(--dark-gray);
 }
 
 /* Typography
